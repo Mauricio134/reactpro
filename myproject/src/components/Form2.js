@@ -9,10 +9,17 @@ export default function Form(props){
     const handleLastValue = (event) =>{
         lastState(lastname = event.target.value)
     }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log({
+            fname: firstname,
+            lname: lastname,
+        })
+    }
     return (
         <div>
             Form
-            <form>
+            <form onSubmit = {handleSubmit}>
                 <input
                     onChange = {handleValue}
                     type = "text"
@@ -25,6 +32,7 @@ export default function Form(props){
                     value = {lastname}
                 >
                 </input>
+                <button type = "submit">Submit</button>
             </form>
         </div>
     );

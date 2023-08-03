@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import Todo from './components/Todo';
 //import Hello from './components/Hello.js';
 //import Message from './components/Message.js';
 //import Profile from './components/Profile.js';
@@ -8,15 +9,13 @@ import './App.css';
 //import FunctionEvent from './components/FunctionEvent.js';
 //import FunctionalState from './components/FunctionalState.js';
 //import Product from './components/Products.js';
-import Form from './components/Form.js';
-import Form2 from './components/Form2.js';
-
+//import Form from './components/Form.js';
+//import Form2 from './components/Form2.js';
 
 function App() {
   return (
     <div className="App">
-      <Form name = "Mauricio" lastname = "Apaza"/>
-      <Form2 name = "Mauricio" lastname = "Apaza"/>
+      <Todo />
     </div>
   );
 }
